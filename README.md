@@ -28,6 +28,16 @@ Usage
 	[[UIApplication sharedApplication] popActivityIndicator];
 	```
 
+How it works
+------------
+
+* Push
+	- Increase the count when you push the activity indicator.
+	- Set _networkActivityIndicatorVisible_ to YES, if the count is greater than 0.
+* Pop
+	- Decrease the count when you pop the activity indicator.
+	- Set _networkActivityIndicatorVisible_ to NO, if the count is ~~less than or~~ equal to 0.
+
 License
 -------
 
